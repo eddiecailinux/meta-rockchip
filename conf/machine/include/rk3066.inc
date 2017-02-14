@@ -1,9 +1,10 @@
 # Copyright (C) 2014 NEO-Technologies
 # Released under the MIT license (see COPYING.MIT for the terms)
 
+SOC_FAMILY  = "rk3066"
 DEFAULTTUNE = "cortexa9-neon"
 require conf/machine/include/tune-cortexa9.inc
-
+require conf/machine/include/soc-family.inc
 PREFERRED_PROVIDER_virtual/xserver = "xserver-xorg"
 
 XSERVER = "xserver-xorg \
